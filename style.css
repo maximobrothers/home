@@ -1,52 +1,154 @@
-/* Reset / base styles */
+/* Reset */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Layout */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
-    line-height: 1.6;
+    background-color: #0f172a;
+    color: #e5e7eb;
 }
 
-/* Main container */
-.container {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 40px;
-    background-color: #ffffff;
-    border-radius: 8px;
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #020617;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+}
+
+.logo {
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #38bdf8;
 }
 
-/* Headings */
-h1 {
-    margin-bottom: 20px;
-    color: #2c7be5;
-}
-
-h2 {
-    margin: 15px 0;
-    font-weight: normal;
-}
-
-/* Paragraph */
-p {
-    margin: 20px 0;
-    font-size: 1.1rem;
-}
-
-/* Links */
-a {
+.nav-link {
+    color: #cbd5f5;
     text-decoration: none;
-    color: #1b5fd6;
+    padding: 12px 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: #163f8c;
+.nav-link:hover {
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+.nav-link.active {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+/* Main Content */
+.content {
+    margin-left: 220px;
+    padding: 40px;
+    width: calc(100% - 220px);
+    overflow-y: auto;
+}
+
+/* Cards */
+.card {
+    background-color: #020617;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn.youtube {
+    background-color: #dc2626;
+}
+
+.btn.twitch {
+    background-color: #7c3aed;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+/* Brand header */
+.brand {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.brand-logo {
+    width: 140px;
+    max-width: 100%;
+    filter: drop-shadow(0 0 10px rgba(56,189,248,0.6));
+}
+
+/* Nav icons */
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px rgba(0,0,0,0.8));
+}
+
+/* Icon hover glow */
+.nav-link:hover .nav-icon {
+    filter: drop-shadow(0 0 8px rgba(56,189,248,0.9));
+}
+.hero {
+    text-align: center;
+}
+
+.hero-logo {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    color: #cbd5f5;
 }

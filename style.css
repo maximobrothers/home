@@ -57,6 +57,7 @@ p {
     width: 140px;
     filter: drop-shadow(0 0 10px rgba(56,189,248,0.6));
 }
+
 /* Split images horizontally */
 .split-container {
   display: flex;                /* Aligns items horizontally */
@@ -66,7 +67,7 @@ p {
 }
 
 .split-image {
-  width: 30%;                  /* Each image takes just under 50% width */
+  width: 300px;                  
   height: auto;                /* Maintains aspect ratio */
   object-fit: cover;           /* Ensures image fills space nicely */
 }
@@ -188,5 +189,6 @@ p {
         padding: 80px 20px;
     }
 }
+
 
 

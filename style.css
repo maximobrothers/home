@@ -17,6 +17,23 @@ body {
     display: flex;
     height: 100vh;
 }
+/* Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c7be5;
+}
+
+h2 {
+    margin: 15px 0;
+    font-weight: normal;
+}
+
+/* Paragraph */
+p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
 
 /* SIDEBAR */
 .sidebar {
@@ -39,6 +56,19 @@ body {
 .brand-logo {
     width: 140px;
     filter: drop-shadow(0 0 10px rgba(56,189,248,0.6));
+}
+/* Split images horizontally */
+.split-container {
+  display: flex;                /* Aligns items horizontally */
+  justify-content: space-between; /* Pushes images to edges, gap in middle */
+  width: 100%;
+  gap: 200px;                   /* Optional: Defines specific space in middle */
+}
+
+.split-image {
+  width: 48%;                  /* Each image takes just under 50% width */
+  height: auto;                /* Maintains aspect ratio */
+  object-fit: cover;           /* Ensures image fills space nicely */
 }
 
 /* NAV */

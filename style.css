@@ -152,3 +152,73 @@ p {
     font-size: 1.2rem;
     color: #cbd5f5;
 }
+/* =========================
+   MOBILE RESPONSIVE STYLES
+   ========================= */
+
+.menu-icon {
+    display: none;
+}
+
+/* Tablet & below */
+@media (max-width: 900px) {
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 2000;
+        cursor: pointer;
+    }
+
+    .menu-icon span {
+        height: 4px;
+        background: #38bdf8;
+        border-radius: 2px;
+    }
+
+    /* Sidebar becomes slide-in menu */
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        width: 240px;
+        z-index: 1500;
+    }
+
+    #menu-toggle:checked ~ .sidebar {
+        transform: translateX(0);
+    }
+
+    /* Content fills screen */
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 80px 20px 30px;
+    }
+
+    .brand-logo {
+        width: 120px;
+    }
+}
+
+/* Hide checkbox */
+#menu-toggle {
+    display: none;
+}
+@media (max-width: 600px) {
+    .nav-link {
+        padding: 16px;
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 480px) {
+    .hero-logo {
+        display: none;
+    }
+}
+

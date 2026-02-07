@@ -68,7 +68,7 @@ p {
 
 .split-image {
   width: 48%;                 
-  aspect-ratio: 16 / 9; /* The height will adjust to maintain a 16:9 ratio based on the width */  /* height: auto;                Maintains aspect ratio */
+  height: auto;               /* Maintains aspect ratio */
   object-fit: cover;           /* Ensures image fills space nicely */
 }
 
@@ -189,6 +189,7 @@ p {
         padding: 80px 20px;
     }
 }
+
 
 
 

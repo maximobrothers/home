@@ -61,12 +61,12 @@ p {
 .split-container {
   display: flex;                /* Aligns items horizontally */
   justify-content: space-between; /* Pushes images to edges, gap in middle */
-  width: 30%;
-  gap: 200px;                   /* Optional: Defines specific space in middle */
+  width: 100%;
+  gap: 20px;                   /* Optional: Defines specific space in middle */
 }
 
 .split-image {
-  width: 48%;                  /* Each image takes just under 50% width */
+  width: 30%;                  /* Each image takes just under 50% width */
   height: auto;                /* Maintains aspect ratio */
   object-fit: cover;           /* Ensures image fills space nicely */
 }
@@ -188,4 +188,5 @@ p {
         padding: 80px 20px;
     }
 }
+
 

@@ -69,7 +69,7 @@ p {
 .split-image {
   width: 100px;                 
   height: auto;               /* Maintains aspect ratio */
-  object-fit: cover;           /* Ensures image fills space nicely */
+ /* object-fit: cover;            Ensures image fills space nicely */
 }
 
 /* NAV */
@@ -189,6 +189,7 @@ p {
         padding: 80px 20px;
     }
 }
+
 
 
 

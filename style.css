@@ -67,7 +67,7 @@ p {
 }
 
 .split-image {
-  width: 300px;                  
+  width: 100px;                  
   height: auto;                /* Maintains aspect ratio */
   object-fit: cover;           /* Ensures image fills space nicely */
 }
@@ -189,6 +189,7 @@ p {
         padding: 80px 20px;
     }
 }
+
 
 
 

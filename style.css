@@ -61,7 +61,7 @@ p {
 /* Split images horizontally */
 .split-container {
   display: flex;                /* Aligns items horizontally */
-  /*justify-content: space-between;  Pushes images to edges, gap in middle */
+  justify-content: space-between;  /*Pushes images to edges, gap in middle */ 
   width: 100%;
   gap: 20px;                   /* Optional: Defines specific space in middle */
 }
@@ -190,6 +190,7 @@ p {
         padding: 80px 20px;
     }
 }
+
 
 
 
